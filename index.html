@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="謝金峰">
-<meta name="description" content="謝金峰 — 軟體工程師 × 資料分析師履歷：慈濟醫療法人東區資訊室、ReferSBAR 跨院轉診協作平台、資料分析與視覺化專長">
+<meta name="description" content="謝金峰 — 軟體工程師 × 資料分析師履歷：慈濟醫療法人東區資訊室、ReferSBAR 跨院轉診協作平台、門急診醫療資訊系統維運、全端開發與 AI 應用">
 <title>謝金峰 — 履歷｜軟體工程師 × 資料分析師</title>
 <script>
 (function(){
@@ -300,7 +300,7 @@ html.js .reveal.in{opacity:1;transform:none;transition:opacity .35s ease-out var
 <section id="about" class="hero reveal" aria-labelledby="about-t">
   <h1 id="about-t">謝金峰</h1>
   <p class="role">軟體工程師 × 資料分析師</p>
-  <p class="intro">具有資料分析和視覺化實務經驗，熟悉 Python 程式設計、資料清洗處理及商業智慧工具應用。在慈濟基金會實習期間，透過資料分析協助組織提升決策效率，具備將複雜資料轉化為有價值洞察的能力。對於運用科技改善社會具有熱忱，期望在非營利組織或企業中發揮資料驅動的影響力。</p>
+  <p class="intro">具備資料分析背景的軟體工程師，現任花蓮慈濟醫院資訊室，負責門急診核心資訊系統開發與維運。從 Legacy 系統 On-call 維護、急診跨院轉診平台從規劃到上線，到 LLM 臨床文件自動化的落地應用，擅長將複雜醫療流程轉為穩定的軟體方案；並具備 Python 資料分析、ETL 與 Power BI 儀表板實務經驗，以數據驅動臨床與行政決策。</p>
   <div class="hero-contact od-cluster" aria-label="聯絡方式">
     <span class="chip"><svg class="ic sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>花蓮市，台灣</span>
     <a class="chip" href="https://linkedin.com/in/chaikimfeng" target="_blank" rel="noopener"><svg class="ic sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
@@ -317,9 +317,12 @@ html.js .reveal.in{opacity:1;transform:none;transition:opacity .35s ease-out var
         <span class="dates od-nowrap">2025年7月－至今</span>
         <span class="dates">工作地点：花蓮慈濟醫院</span>
         <ul class="bullets">
-          <li>參與醫療資訊系統的開發、維護與跨部門需求溝通</li>
-          <li>投入跨院轉診電子化方案 ReferSBAR（詳見下方關鍵專案）</li>
-          <li>以資料分析與儀表板支援臨床及行政管理決策</li>
+          <li>負責門急診核心資訊系統（CPOE 醫囑、掛號 RegList、EMR 電子病歷）開發與維護，On-call 支援急診不中斷</li>
+          <li>參與急診跨院轉診平台 ReferSBAR 從規劃到上線的全開發流程（詳見下方關鍵專案）</li>
+          <li>復健科無紙化系統 RehaLink 全端開發，含排班演算法與系統效能優化</li>
+          <li>維運疾管署、健保署等法規資料交換介面（傳染病自動通報、電子轉診平台 API）</li>
+          <li>投入 LLM 與生成式 AI 在臨床文件自動化與開發生產力的導入研究</li>
+          <li>跨部門需求溝通、工作月報與指標儀表板，支援臨床及行政管理決策</li>
         </ul>
       </div>
     </article>
@@ -328,23 +331,89 @@ html.js .reveal.in{opacity:1;transform:none;transition:opacity .35s ease-out var
 
 <section id="projects" class="reveal" aria-labelledby="projects-t">
   <h2 class="sec-title" id="projects-t"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7l10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>關鍵專案</h2>
-  <article class="card reveal" style="margin-top:20px">
-    <div class="od-field" style="--od-gap:4px">
-      <span class="job-title"><h3>ReferSBAR 跨院轉診協作平台</h3><span class="chip">現職專案</span></span>
-      <p class="lede">針對電話口述轉診造成的資訊不完整與人工抄寫錯誤，推動急診跨院轉診電子化。</p>
-      <ul class="bullets">
-        <li>轉出端自主填寫 SBAR 標準化電子表單，轉診資訊結構化留存</li>
-        <li>透過 LINE、簡訊、Email 多管道即時通知急診值班團隊</li>
-        <li>建置跨院轉診數據分析儀表板，供管理層決策參考</li>
-      </ul>
-      <div class="proj-chips od-cluster" aria-label="專案標籤"><span class="chip">轉診</span><span class="chip">SBAR</span><span class="chip">即時通知</span><span class="chip">儀表板</span></div>
-      <div class="proj-grid">
-        <span class="benefit od-field"><strong>急診團隊</strong><span>減負荷、減少抄寫錯誤</span></span>
-        <span class="benefit od-field"><strong>醫療品質</strong><span>爭取黃金救治時間</span></span>
-        <span class="benefit od-field"><strong>醫院管理層</strong><span>數據決策、區域聯防</span></span>
+  <p class="lede">以下專案績效濃縮自歷年每日工作記錄：從 Legacy 核心系統維運、全端新系統 0→1 上線，到 AI 落地應用。</p>
+  <div class="entries">
+    <article class="entry reveal">
+      <div class="card od-field entry-head">
+        <span class="job-title"><h3>ReferSBAR 急診跨院轉診協作平台</h3><span class="chip">現職專案・已上線</span></span>
+        <p class="lede">針對電話口述轉診造成的資訊不完整與人工抄寫錯誤，推動急診跨院轉診電子化，2026 年 7 月正式上線。</p>
+        <ul class="bullets">
+          <li>參與系統規劃、資料庫 Schema 設計到前後端開發、整合測試與部署的全流程</li>
+          <li>SBAR 結構化電子表單與既有 HIS WinForm 透過 WebAPI 對接，設計免密碼登入（Magic Link）與角色權限控管</li>
+          <li>LINE／簡訊／Email 多管道即時通知，並整合急診巡房 APP 的 API 與推播提醒</li>
+          <li>對接健保署電子轉診平台 API；醫院代碼對照表支援拼音縮寫搜尋</li>
+          <li>LLM 臨床文字結構化自動填入：完成去識別化、多模型評估、前端預覽對照與一鍵填入共 16 項全鏈路開發</li>
+          <li>電子白板統計轉入／轉出等待人數、轉診數據儀表板與手機版 RWD 介面</li>
+        </ul>
+        <div class="proj-chips od-cluster" aria-label="專案標籤"><span class="chip">React</span><span class="chip">ASP.NET Core WebAPI</span><span class="chip">SBAR</span><span class="chip">FHIR</span><span class="chip">LLM</span><span class="chip">健保署 API</span></div>
+        <div class="proj-grid">
+          <span class="benefit od-field"><strong>急診團隊</strong><span>減負荷、減少抄寫錯誤</span></span>
+          <span class="benefit od-field"><strong>醫療品質</strong><span>爭取黃金救治時間</span></span>
+          <span class="benefit od-field"><strong>醫院管理層</strong><span>數據決策、區域聯防</span></span>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+    <article class="entry reveal">
+      <div class="card od-field entry-head">
+        <span class="job-title"><h3>門急診醫囑系統（VB6）維運與現代化</h3><span class="chip">核心系統 On-call</span></span>
+        <p class="lede">肩負全院門急診看診流程核心系統的穩定運作，兼顧缺陷修復、資安防護與架構現代化。</p>
+        <ul class="bullets">
+          <li>追查影響全院之急診病歷號串號問題：完成全院資料清查、對帳三張工作表確立漂移真因，並產出調查報告</li>
+          <li>檢驗申請單導入交易回滾保護與提交狀態標記，強化錯誤日誌與存檔前檢核</li>
+          <li>解決 Windows 11 環境 DLL 註冊異常閃退，並完成 VB6 × C# COM 跨技術串接</li>
+          <li>跨同仁分支版本三方合併、回復 MS14/MS15 防護，建立 Big5/FRX 編碼防護規範與執行檔版本戳章追蹤</li>
+          <li>自建 Node.js 靜態分析工具鏈：跨表單狀態依賴、Spread 18 域能力覆蓋矩陣、Action 指令碼語意分析與院區分叉清查</li>
+          <li>開發急診擁塞指標（ISS／醫令／診斷）、72 小時返診、6 小時返診動態重開帳等臨床關鍵邏輯</li>
+        </ul>
+        <div class="proj-chips od-cluster" aria-label="專案標籤"><span class="chip">VB6</span><span class="chip">SQL Server</span><span class="chip">預存程序</span><span class="chip">交易保護</span><span class="chip">靜態分析</span><span class="chip">On-call</span></div>
+        <div class="proj-grid">
+          <span class="benefit od-field"><strong>看診穩定</strong><span>急診不能斷線，即時排除</span></span>
+          <span class="benefit od-field"><strong>資料正確</strong><span>清查真因＋調查報告</span></span>
+          <span class="benefit od-field"><strong>技術債管理</strong><span>Legacy 系統現代化路線</span></span>
+        </div>
+      </div>
+    </article>
+    <article class="entry reveal">
+      <div class="card od-field entry-head">
+        <span class="job-title"><h3>門診醫囑單機版（離線看診與線上同步）</h3><span class="chip">從無到有</span></span>
+        <p class="lede">為應對線上系統斷線風險，打造可離線看診、連線後自動回傳線上同步的單機版 CPOE。</p>
+        <ul class="bullets">
+          <li>約 5 週完成病歷、藥品、處置、診斷（ICD-10→ICD-9 轉換）上傳功能，含初複診判斷、掛號衝突檢查與線上同步驗證</li>
+          <li>將 Local Access／MDB 資料庫遷移至 SQLite，解決 x86 相容、資料型態與 SQL 語法差異等疑難問題</li>
+          <li>以 MVP 模式重構程式架構，加入本機 Log、非同步上傳防衝突與診間選擇機制</li>
+          <li>彙整離線看診、處方列印與連線回傳之佐證資料，支援醫院 HIMSS 評鑑作業</li>
+          <li>盤點並重構 RDLC 處方報表至中一刀橫向紙張規格，解決列印規格綁定問題</li>
+        </ul>
+        <div class="proj-chips od-cluster" aria-label="專案標籤"><span class="chip">CPOE</span><span class="chip">MVP 架構</span><span class="chip">SQLite</span><span class="chip">ICD-10</span><span class="chip">RDLC</span><span class="chip">HIMSS</span></div>
+      </div>
+    </article>
+    <article class="entry reveal">
+      <div class="card od-field entry-head">
+        <span class="job-title"><h3>復健科無紙化作業系統 RehaLink</h3><span class="chip">全端開發</span></span>
+        <p class="lede">復健科治療排班與治療記錄全面無紙化，涉及流程改造與大量 UI/UX 溝通。</p>
+        <ul class="bullets">
+          <li>優化治療排班演算法與預約防呆，時間軸 UI 調整提升治療師操作體驗</li>
+          <li>架構重構：建立 Data/Services 介面層與依賴注入（DI），以 Fake Adapter 建立單元測試基礎</li>
+          <li>排班讀取效能壓力測試並調整 Redis 快取策略；修復非同步寫入衝突</li>
+          <li>列印報表自動帶入歷史病歷與基本資料、動態產生報表與一鍵存檔</li>
+        </ul>
+        <div class="proj-chips od-cluster" aria-label="專案標籤"><span class="chip">全端</span><span class="chip">架構重構</span><span class="chip">依賴注入</span><span class="chip">Redis</span><span class="chip">單元測試</span></div>
+      </div>
+    </article>
+    <article class="entry reveal">
+      <div class="card od-field entry-head">
+        <span class="job-title"><h3>MUSE 心電圖整合網關與法規自動通報</h3><span class="chip">API／合規</span></span>
+        <p class="lede">整合第三方心電圖系統資料入庫，並維護對政府機關的自動通報線。</p>
+        <ul class="bullets">
+          <li>撰寫 Vendor API 規格書、規劃資料表架構與医令連結儲存程序（link-order 端點）</li>
+          <li>IIS＋.NET Runtime 部署排查（HTTP 500.31）、IS_VOID 軟刪除 View 解耦設計與 Postman 測試集合</li>
+          <li>開發 Inno Setup 自動打包腳本（build-installer.ps1）與 IIS 前置檢查</li>
+          <li>疾管署傳染病 EMR 自動通報維運：排查加密與 XML 回寫失敗等問題，維護法規遵循、避免院端受罰</li>
+        </ul>
+        <div class="proj-chips od-cluster" aria-label="專案標籤"><span class="chip">RESTful API</span><span class="chip">IIS</span><span class="chip">Inno Setup</span><span class="chip">XML</span><span class="chip">CDC 通報</span></div>
+      </div>
+    </article>
+  </div>
 </section>
 
 <section id="experience" class="reveal" aria-labelledby="experience-t">
@@ -405,11 +474,14 @@ html.js .reveal.in{opacity:1;transform:none;transition:opacity .35s ease-out var
 <section id="skills" class="reveal" aria-labelledby="skills-t">
   <h2 class="sec-title" id="skills-t"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg>技能專長</h2>
   <div class="od-grid skills-grid">
-    <div class="card skill-card reveal"><h3>機器學習與AI</h3><div class="od-cluster"><span class="chip">Deep Learning</span><span class="chip">ConvNeXt</span><span class="chip">TensorFlow</span><span class="chip">PyTorch</span><span class="chip">Scikit-learn</span><span class="chip">Computer Vision</span></div></div>
-    <div class="card skill-card reveal"><h3>程式語言</h3><div class="od-cluster"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">R</span><span class="chip">JavaScript</span></div></div>
-    <div class="card skill-card reveal"><h3>資料處理工具</h3><div class="od-cluster"><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Talend</span><span class="chip">OpenCV</span><span class="chip">Excel</span></div></div>
-    <div class="card skill-card reveal"><h3>資料視覺化</h3><div class="od-cluster"><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span></div></div>
-    <div class="card skill-card reveal"><h3>資料庫與其他</h3><div class="od-cluster"><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">Git</span><span class="chip">Jupyter</span><span class="chip">統計分析</span><span class="chip">醫學影像處理</span></div></div>
+    <div class="card skill-card reveal"><h3>醫療資訊系統</h3><div class="od-cluster"><span class="chip">CPOE 醫囑</span><span class="chip">EMR／HIS</span><span class="chip">SBAR 轉診</span><span class="chip">FHIR</span><span class="chip">健保署電子轉診 API</span><span class="chip">疾管署自動通報</span><span class="chip">ICD-10／ICD-9</span><span class="chip">檢傷分類</span></div></div>
+    <div class="card skill-card reveal"><h3>程式語言</h3><div class="od-cluster"><span class="chip">C#</span><span class="chip">VB6</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">JavaScript</span><span class="chip">R</span></div></div>
+    <div class="card skill-card reveal"><h3>後端與架構</h3><div class="od-cluster"><span class="chip">ASP.NET Core</span><span class="chip">.NET WinForms</span><span class="chip">RESTful WebAPI</span><span class="chip">Node.js</span><span class="chip">MVP 模式</span><span class="chip">依賴注入</span><span class="chip">Redis 快取</span></div></div>
+    <div class="card skill-card reveal"><h3>前端與部署</h3><div class="od-cluster"><span class="chip">React</span><span class="chip">HTML／CSS</span><span class="chip">RWD 手機版</span><span class="chip">IIS</span><span class="chip">Inno Setup</span><span class="chip">Postman</span></div></div>
+    <div class="card skill-card reveal"><h3>資料庫</h3><div class="od-cluster"><span class="chip">SQL Server</span><span class="chip">預存程序</span><span class="chip">效能 Index 調校</span><span class="chip">交易保護</span><span class="chip">Access／SQLite</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span></div></div>
+    <div class="card skill-card reveal"><h3>工程實踐與維運</h3><div class="od-cluster"><span class="chip">Git／TFS</span><span class="chip">Code Review 重構</span><span class="chip">單元測試</span><span class="chip">靜態分析工具鏈</span><span class="chip">效能壓力測試</span><span class="chip">急診 On-call 維運</span></div></div>
+    <div class="card skill-card reveal"><h3>AI 與 LLM 應用</h3><div class="od-cluster"><span class="chip">LLM 串接</span><span class="chip">多模型評估</span><span class="chip">資料去識別化</span><span class="chip">生成式 AI 賦能</span><span class="chip">Deep Learning</span><span class="chip">TensorFlow</span><span class="chip">PyTorch</span><span class="chip">計算機視覺</span></div></div>
+    <div class="card skill-card reveal"><h3>資料分析與視覺化</h3><div class="od-cluster"><span class="chip">Python（Pandas／NumPy）</span><span class="chip">Talend ETL</span><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">統計分析</span><span class="chip">Excel</span></div></div>
   </div>
 </section>
 <section id="personal" class="reveal" aria-labelledby="personal-t">
